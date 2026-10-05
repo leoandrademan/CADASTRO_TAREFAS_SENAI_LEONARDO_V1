@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,31 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Painel de Tarefas - SENAI</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Biblioteca de ícones (Font Awesome) para compor a interface -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <img src="Leo_pensante.png" alt="Foto Circular" class="foto-sobreposta">
     <div class="cartao-aplicacao">
-        <header class="cabecalho-aplicacao">
-            <h1>Minhas Tarefas ✨</h1>
-            <button id="botao-alternar-tema" class="botao-icone">
-                <i class="fa-solid fa-moon"></i>
-            </button>
-        </header>
 
-        <div class="caixa-entrada">
-            <input type="text" id="campo-tarefa" placeholder="O que vamos fazer hoje?..." maxlength="40">
-            <button id="botao-adicionar" class="botao-principal">
-                <i class="fa-solid fa-plus"></i> Adicionar
-            </button>
-        </div>
+    <header class="cabecalho-aplicacao">
+        <h1>Minhas Tarefas ✨</h1>
 
-        <ul id="lista-tarefas" class="lista-tarefas"></ul>
+        <button id="botao-alternar-tema" class="botao-icone">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </header>
 
-        <footer class="rodape-aplicacao">
-            <span id="contador-tarefas">0 tarefas na lista</span>
-        </footer>
+    <div class="caixa-entrada">
+
+        <input
+            type="text"
+            id="campo-tarefa"
+            placeholder="O que vamos fazer hoje?..."
+            maxlength="40"
+        >
+
+        <button id="botao-adicionar" class="botao-principal">
+            <i class="fa-solid fa-plus"></i>
+            Adicionar
+        </button>
+
     </div>
+
+    <ul id="lista-tarefas" class="lista-tarefas"></ul>
+
+    <footer class="rodape-aplicacao">
+        <span id="contador-tarefas">0 tarefas na lista</span>
+    </footer>
+
+</div>
 
     <script src="script.js"></script>
 </body>

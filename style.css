@@ -1,18 +1,17 @@
-/* Variáveis para facilidade de temas (Limpo e Tons Pastéis) */
 :root {
-    --gradiente-fundo: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-    --fundo-cartao: #ffffff;
+    --gradiente-fundo: linear-gradient(135deg, #c2c1f7 0%, #7dc0ef 100%);
+    --fundo-cartao: #9ea7af6b;
     --cor-texto: #2d3748;
     --cor-primaria: #6c5ce7;
     --cor-primaria-destaque: #5b4bc4;
-    --cor-borda: #edf2f7;
+    --cor-borda: #6e88a3;
     --cor-perigo: #ff7675;
-    --cor-concluido: #a0aec0;
+    --cor-concluido: #ffffff;
 }
 
 body.modo-escuro {
-    --gradiente-fundo: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
-    --fundo-cartao: #1a202c;
+    --gradiente-fundo: linear-gradient(135deg, #15418d 0%, #0a0a0a 100%);
+    --fundo-cartao: #0e1c39;
     --cor-texto: #f7fafc;
     --cor-borda: #4a5568;
 }
@@ -23,6 +22,19 @@ body.modo-escuro {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: background 0.3s, color 0.3s;
+}
+
+.foto-sobreposta {
+    position: fixed;       
+    top: 20%;             
+    left: 50%;             
+    transform: translate(-50%, -50%); 
+    width: 150px;          
+    height: 150px;         
+    object-fit: cover;     
+    border-radius: 50%;    
+    z-index: 9999;         
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.4); 
 }
 
 body {
@@ -41,7 +53,7 @@ body {
     max-width: 420px;
     border-radius: 20px;
     padding: 30px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
 .cabecalho-aplicacao {
@@ -136,6 +148,10 @@ input[type="text"]:focus {
     color: var(--cor-texto);
 }
 
+.botao-acao.concluir:hover {
+    color: #48bb78;
+}
+
 .botao-acao.excluir:hover {
     color: var(--cor-perigo);
 }
@@ -148,6 +164,27 @@ input[type="text"]:focus {
 }
 
 @keyframes aparecer {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+
+@media (max-width: 480px) {
+    .cartao-aplicacao {
+        padding: 20px;
+    }
+}
+
+    .caixa-entrada {
+        flex-direction: column;
+    }
+
+    .botao-principal {
+        width: 100%;
+    }
