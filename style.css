@@ -1,10 +1,10 @@
 :root {
     --gradiente-fundo: linear-gradient(135deg, #c2c1f7 0%, #7dc0ef 100%);
-    --fundo-cartao: #9ea7af6b;
+    --fundo-cartao: #e6f3ff7a;
     --cor-texto: #2d3748;
     --cor-primaria: #6c5ce7;
     --cor-primaria-destaque: #5b4bc4;
-    --cor-borda: #6e88a3;
+    --cor-borda: #768ba133;
     --cor-perigo: #ff7675;
     --cor-concluido: #ffffff;
 }
@@ -159,7 +159,7 @@ input[type="text"]:focus {
 .rodape-aplicacao {
     margin-top: 15px;
     font-size: 0.85rem;
-    color: var(--cor-concluido);
+    color: var(--cor-texto);
     text-align: center;
 }
 
